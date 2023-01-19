@@ -1,0 +1,16 @@
+.forms {
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms input {
+    width: 350px;
+    height: 40px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}

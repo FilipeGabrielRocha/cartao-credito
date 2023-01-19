@@ -7,71 +7,79 @@
 
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/forms.css">
     <link rel="stylesheet" href="src/css/cardFrente.css">
     <link rel="stylesheet" href="src/css/cardTraz.css">
 
     <title>Cartão de Crédito</title>
 </head>
-<body>
-    <header>
-        <h1>Cartão de Crédito</h1>
-    </header>
-    <main>
-        <section class="container-cards">
-            <div class="cardFrente">
-                <div class="content">
-                    <div class="header">
-                        <div class="box-img">
-                            <img class="logo-mastercard" src="src/img/mastercard_logo.png" alt="Logo mastercard">
-                            <img class="chip" src="src/img/chip.png" alt="Chip">
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <p><strong>NOME DO TITULAR</strong></p>
-                        <img class="logo-nubank" src="src/img/nubank_logo.png" alt="Logo Nubank">
-                    </div>
-                </div>
-            </div>
-            <div class="cardTraz">
-                <div class="content-cardTraz">
-                    <div class="header-cardTraz">
-                        <div class="box-img-cardTraz">
-                            <img class="logo-cirrus" src="src/img/Cirrus.png" alt="Logo Cirrus Rede Interbancária">
-                        </div>
-                    </div>
-                    <div class="footer-cardTraz">
-                        <p><strong>gold</strong></p>
-                        <div class="sem-bandeira"></div>
-                        <p class="numero-card">0000 0000 0000 0000</p>
-                        <div class="container-member-since">
-                            <div class="member-since">
-                                <p><strong>MEMBER<br>SINCE</strong></p>
-                            </div>
-                            <div class="data-member-since">
-                                <p>00/00</p>
+<body>            
+    <form class="forms">
+        <input type="text" name="nome-do-titular" id="nome-titular" placeholder="NOME DO TITULAR">
+        <input type="text" name="numero-cartao" id="numero-cartao" placeholder="NÚMERO DO CARTÃO">
+        <input type="text" name="member-since" id="member-since" placeholder="MEMBRO DESDE">
+        <input type="text" name="valid-thru" id="valid-thru" placeholder="VALIDADE DO CARTÃO">
+        <input type="text" name="security-code" id="security-code" placeholder="CÓDIGO DE SEGURANÇA">
+    </form>
+    <section class="container">
+        <main class="main">
+            <h1>Cartão de Crédito</h1>
+            <div class="container-cards">
+                <div class="cardFrente">
+                    <div class="content">
+                        <div class="header">
+                            <div class="box-img">
+                                <img class="logo-mastercard" src="src/img/mastercard_logo.png" alt="Logo mastercard">
+                                <img class="chip" src="src/img/chip.png" alt="Chip">
                             </div>
                         </div>
-                        <div class="container-valid-thru">
-                            <div class="centralizar valid-thru">
-                                <p><strong>VALID<br>THRU</strong></p>
-                            </div>
-                            <div class="data-valid-thru">
-                                <p>00/00</p>
-                            </div>
-                        </div>
-                        <div class="container-security-code">
-                            <div class="centralizar valid-thru">
-                                <p><strong>SECURITY<br>CODE</strong></p>
-                            </div>
-                        </div>
-                        <div class="data-security-code">
-                            <p>000</p>
+                        <div class="footer">
+                            <p><strong>NOME DO TITULAR</strong></p>
+                            <img class="logo-nubank" src="src/img/nubank_logo.png" alt="Logo Nubank">
                         </div>
                     </div>
                 </div>
+                <div class="cardTraz">
+                    <div class="content-cardTraz">
+                        <div class="header-cardTraz">
+                            <div class="box-img-cardTraz">
+                                <img class="logo-cirrus" src="src/img/Cirrus.png" alt="Logo Cirrus Rede Interbancária">
+                            </div>
+                        </div>
+                        <div class="footer-cardTraz">
+                            <p><strong>gold</strong></p>
+                            <div class="sem-bandeira"></div>
+                            <p class="numero-card">0000 0000 0000 0000</p>
+                            <div class="container-member-since">
+                                <div class="member-since">
+                                    <p><strong>MEMBER<br>SINCE</strong></p>
+                                </div>
+                                <div class="data-member-since">
+                                    <p>00/00</p>
+                                </div>
+                            </div>
+                            <div class="container-valid-thru">
+                                <div class="centralizar valid-thru">
+                                    <p><strong>VALID<br>THRU</strong></p>
+                                </div>
+                                <div class="data-valid-thru">
+                                    <p>00/00</p>
+                                </div>
+                            </div>
+                            <div class="container-security-code">
+                                <div class="centralizar valid-thru">
+                                    <p><strong>SECURITY<br>CODE</strong></p>
+                                </div>
+                            </div>
+                            <div class="data-security-code">
+                                <p>000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </main>
+    </section>
 
     <script src="src/js/cardFrente.js"></script>
     <script src="src/js/cardTraz.js"></script>
