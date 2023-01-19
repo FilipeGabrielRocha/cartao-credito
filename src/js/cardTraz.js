@@ -1,10 +1,10 @@
 const cardTraz = document.querySelector(".cardTraz")
 
-cardTraz.addEventListener("mousemove", cardEffect)
-cardTraz.addEventListener("mouseleave", cardBack)
-cardTraz.addEventListener("mouseenter", cardEnter)
+cardTraz.addEventListener("mousemove", cardEffectTraz)
+cardTraz.addEventListener("mouseleave", cardBackTraz)
+cardTraz.addEventListener("mouseenter", cardEnterTraz)
 
-function cardEffect(event) {
+function cardEffectTraz(event) {
     const cardLargura = cardTraz.offsetWidth
     const cardAltura = cardTraz.offsetHeight
     const centroX = cardTraz.offsetLeft + cardLargura / 2
@@ -18,12 +18,12 @@ function cardEffect(event) {
     cardTraz.style.transform = `perspective(500px) rotateX(${rotacaoX}deg) rotateY(${rotacaoY}deg)`
 }
 
-function cardBack(event) {
+function cardBackTraz(event) {
     cardTraz.style.transform = `perspective(500px) rotateX(0deg) rotateY(0deg)`
-    cardTransicao()
+    cardTransicaoTraz()
 }
 
-function cardTransicao() {
+function cardTransicaoTraz() {
     clearInterval(cardTraz.transitionId)
     cardTraz.style.transition = "transform 400ms"
     cardTraz.transitionId = setTimeout(() => {
@@ -31,6 +31,6 @@ function cardTransicao() {
     }, 400)
 }
 
-function cardEnter(event) {
-    cardTransicao()
+function cardEnterTraz(event) {
+    cardTransicaoTraz()
 }

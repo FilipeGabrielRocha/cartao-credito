@@ -1,10 +1,10 @@
 const cardFrente = document.querySelector('.cardFrente')
 
-cardFrente.addEventListener("mousemove", cardEffect)
-cardFrente.addEventListener("mouseleave", cardBack)
-cardFrente.addEventListener("mouseenter", cardEnter)
+cardFrente.addEventListener("mousemove", cardEffectFrente)
+cardFrente.addEventListener("mouseleave", cardBackFrente)
+cardFrente.addEventListener("mouseenter", cardEnterFrente)
 
-function cardEffect(event) {
+function cardEffectFrente(event) {
     const cardLargura = cardFrente.offsetWidth
     const cardAltura = cardFrente.offsetHeight
     const centroX = cardFrente.offsetLeft + cardLargura / 2
@@ -18,12 +18,12 @@ function cardEffect(event) {
     cardFrente.style.transform = `perspective(500px) rotateX(${rotacaoX}deg) rotateY(${rotacaoY}deg)`
 }
 
-function cardBack(event) {
+function cardBackFrente(event) {
     cardFrente.style.transform = `perspective(500px) rotateX(0deg) rotateY(0deg)`
-    cardTransicao()
+    cardTransicaoFrente()
 }
 
-function cardTransicao() {
+function cardTransicaoFrente() {
     clearInterval(cardFrente.transitionId)
     cardFrente.style.transition = "transform 400ms"
     cardFrente.transitionId = setTimeout(() => {
@@ -31,6 +31,7 @@ function cardTransicao() {
     }, 400)
 }
 
-function cardEnter(event) {
-    cardTransicao()
+function cardEnterFrente(event) {
+    cardTransicaoFrente()
 }
+
