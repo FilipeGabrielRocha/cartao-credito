@@ -1,0 +1,113 @@
+.cardTraz {
+    background: url(../img/cardTraz.jpg) no-repeat center center;
+    background-size: cover;
+    background-color: #820ad1;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 10px;
+    width: 272px;
+    height: 432px;
+    box-shadow: 5px 8px 8px #000;
+}
+
+.content-cardTraz {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.logo-cirrus {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 175px;
+    top: 5px;
+    width: 30%;
+}
+
+.header-cardTraz {
+    height: 70%;
+}
+
+.box-img-cardTraz {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-cardTraz {
+    height: 30%;
+}
+
+.footer-cardTraz p {
+    position: absolute;
+    color: #B8B4B3;
+    bottom: 25px;
+    left: 70px;
+    text-align: center;
+    transform: rotate(-90deg);
+    /* opacity: 0; */
+}
+
+.cardTraz .content-cardTraz .footer-cardTraz .sem-bandeira {
+    position: absolute;
+    bottom: 0px;
+    left: 110px;
+    border-radius: 50px;
+    background-color: #B8B4B3;
+    width: 40px;
+    height: 60px;
+}
+
+.footer-cardTraz img {
+    width: 35%;
+    /* opacity: 0; */
+}
+
+.cardTraz .content-cardTraz .footer-cardTraz .numero-card {
+    font-size: 25px;
+    left: 30px;
+    bottom: 105px;
+    width: 300px;
+}
+
+.cardTraz .content-cardTraz .footer-cardTraz .container-member-since {
+    position: absolute;
+    font-size: 8px;
+    left: 120px;
+    bottom: -14px;
+}
+
+.cardTraz .content-cardTraz .footer-cardTraz .data-member-since {
+    position: absolute;
+    font-size: 15px;
+    bottom: 42px;
+    left: -1px;
+}
+
+.cardTraz .content-cardTraz .footer-cardTraz .container-valid-thru {
+    position: absolute;
+    font-size: 8px;
+    left: 127px;
+    bottom: 70px;
+}
+
+.cardTraz .content-cardTraz .footer-cardTraz .data-valid-thru {
+    position: absolute;
+    font-size: 15px;
+    bottom: 37px;
+    left: -9px;
+}
+
+.cardTraz .content-cardTraz .footer-cardTraz .container-security-code {
+    position: absolute;
+    font-size: 8px;
+    left: 119px;
+    bottom: 155px;
+}
+
+.cardTraz .content-cardTraz .footer-cardTraz .data-security-code {
+    position: absolute;
+    font-size: 15px;
+    bottom: 192px;
+    left: 124px;
+}
