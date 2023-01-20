@@ -49,3 +49,7 @@
     margin: 1em;
     /* opacity: 0; */
 }
+
+.footer .nome-titular-frente {
+    text-transform: uppercase;
+}

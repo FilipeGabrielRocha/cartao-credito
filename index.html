@@ -15,14 +15,123 @@
 
     <title>Cartão de Crédito</title>
 </head>
-<body>            
-    <form class="forms">
-        <input type="text" name="nome-do-titular" id="nome-titular" placeholder="NOME DO TITULAR">
-        <input type="text" name="numero-cartao" id="numero-cartao" placeholder="NÚMERO DO CARTÃO">
-        <input type="text" name="member-since" id="member-since" placeholder="MEMBRO DESDE">
-        <input type="text" name="valid-thru" id="valid-thru" placeholder="VALIDADE DO CARTÃO">
-        <input type="text" name="security-code" id="security-code" placeholder="CÓDIGO DE SEGURANÇA">
-    </form>
+<body>   
+    <section class="container-form">
+        <form action="">
+            <div class="inputBox">
+                <span>número do cartão</span>
+                <input class="numero-do-cartao-input" type="text" maxlength="16" name="" id="">
+            </div>
+            <div class="inputBox">
+                <span>nome do titular</span>
+                <input class="nome-do-titular-input" type="text" name="" id="">
+            </div>
+            <div class="flexbox">
+                <div class="inputBox">
+                    <span>member since</span>
+                    <div class="container-select">
+                        <select class="member-since-month" name="" id="">
+                            <option value="mes" selected disabled>Mês</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select class="member-since-year" name="" id="">
+                            <option value="ano" selected disabled>Ano</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <span>valid thru</span>
+                    <div class="container-select">
+                        <select class="valid-thru-month">
+                            <option value="mes" selected disabled>Mês</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select class="valid-thru-year">
+                            <option value="ano" selected disabled>Ano</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <span>cvv</span>
+                    <input class="codigo-de-seguranca-input" type="text" maxlength="3">
+                </div>
+            </div>
+        </form>
+    </section>         
     <section class="container">
         <main class="main">
             <h1>Cartão de Crédito</h1>
@@ -36,7 +145,7 @@
                             </div>
                         </div>
                         <div class="footer">
-                            <p><strong>NOME DO TITULAR</strong></p>
+                            <strong class="nome-titular-frente"><p class="nome-titular">NOME DO TITULAR</p></strong>
                             <img class="logo-nubank" src="src/img/nubank_logo.png" alt="Logo Nubank">
                         </div>
                     </div>
@@ -57,7 +166,9 @@
                                     <p><strong>MEMBER<br>SINCE</strong></p>
                                 </div>
                                 <div class="data-member-since">
-                                    <p>00/00</p>
+                                    <p class="data-member-since-mes">00</p>
+                                    <p class="data-member-since-barra">/</p>
+                                    <p class="data-member-since-ano">00</p>
                                 </div>
                             </div>
                             <div class="container-valid-thru">
@@ -65,7 +176,9 @@
                                     <p><strong>VALID<br>THRU</strong></p>
                                 </div>
                                 <div class="data-valid-thru">
-                                    <p>00/00</p>
+                                    <p class="data-valid-thru-mes">00</p>
+                                    <p class="data-valid-thru-barra">/</p>
+                                    <p class="data-valid-thru-ano">00</p>
                                 </div>
                             </div>
                             <div class="container-security-code">
@@ -74,7 +187,7 @@
                                 </div>
                             </div>
                             <div class="data-security-code">
-                                <p>000</p>
+                                <p class="cvv">000</p>
                             </div>
                         </div>
                     </div>
@@ -85,5 +198,6 @@
 
     <script src="src/js/cardFrente.js"></script>
     <script src="src/js/cardTraz.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
