@@ -1,28 +1,35 @@
-document.querySelector('.numero-do-cartao-input').oninput = () => {
-    document.querySelector('.numero-card').innerText = document.querySelector('.numero-do-cartao-input').value
+let numeroDoCartao = document.querySelector('.numero-do-cartao-input')
+numeroDoCartao.oninput = () => {
+    document.querySelector('.numero-card').innerText = numeroDoCartao.value
 }
 
-document.querySelector('.nome-do-titular-input').oninput = () => {
-    document.querySelector('.nome-titular').innerText = document.querySelector('.nome-do-titular-input').value
+let nomeDoTitular = document.querySelector('.nome-do-titular-input')
+nomeDoTitular.oninput = () => {
+    document.querySelector('.nome-titular').innerText = nomeDoTitular.value
 }
 
-document.querySelector('.codigo-de-seguranca-input').oninput = () => {
-    document.querySelector('.cvv').innerText = document.querySelector('.codigo-de-seguranca-input').value
+let codigoDeSeguranca = document.querySelector('.codigo-de-seguranca-input')
+codigoDeSeguranca.oninput = () => {
+    document.querySelector('.cvv').innerText = codigoDeSeguranca.value
 }
 
-document.querySelector('.member-since-month').oninput = () => {
-    document.querySelector('.data-member-since-mes').innerText = document.querySelector('.member-since-month').value
+let memberSinceMes = document.querySelector('.member-since-month')
+memberSinceMes.oninput = () => {
+    document.querySelector('.data-member-since-mes').innerText = memberSinceMes.value
 }
 
-document.querySelector('.member-since-year').oninput = () => {
-    document.querySelector('.data-member-since-ano').innerText = document.querySelector('.member-since-year').value
+let memberSinceAno = document.querySelector('.member-since-year')
+memberSinceAno.oninput = () => {
+    document.querySelector('.data-member-since-ano').innerText = memberSinceAno.value
 }
 
-document.querySelector('.valid-thru-month').oninput = () => {
-    document.querySelector('.data-valid-thru-mes').innerText = document.querySelector('.valid-thru-month').value
+let validThruMes = document.querySelector('.valid-thru-month')
+validThruMes.oninput = () => {
+    document.querySelector('.data-valid-thru-mes').innerText = validThruMes.value
 }
 
-document.querySelector('.valid-thru-year').oninput = () => {
-    document.querySelector('.data-valid-thru-ano').innerText = document.querySelector('.valid-thru-year').value
+let validThruAno = document.querySelector('.valid-thru-year')
+validThruAno.oninput = () => {
+    document.querySelector('.data-valid-thru-ano').innerText = validThruAno.value
 }
 
